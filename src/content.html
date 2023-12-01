@@ -1,23 +1,27 @@
 <html>
-	<head>
-	</head>
-	<body>
-		<div id="omni-extension" class="omni-closing omni-extension">
-			<div id="omni-wrap">
-				<div id="omni">
-					<div id="omni-search">
-						<input placeholder="Type a command or search">
-					</div>
-					<div id="omni-list">
-					</div>
-					<div id="omni-footer">
-						<div id="omni-results">153 results</div>
-						<div id="omni-arrows">Use arrow keys <span class="omni-shortcut">↑</span><span class="omni-shortcut">↓</span> to navigate</div>
-					</div>
+
+<head>
+</head>
+
+<body>
+	<div id="omni-extension" class="omni-closing omni-extension">
+		<div id="omni-wrap">
+			<div id="omni">
+				<div id="omni-search">
+					<input data-locale="ph:search_placeholder">
+				</div>
+				<div id="omni-list">
+				</div>
+				<div id="omni-footer">
+					<div id="omni-results"></div>
+					<div id="omni-arrows" data-locale="val:footer_tip_start|val:footer_tip_end">%locale% <span
+							class="omni-shortcut">↑</span><span class="omni-shortcut">↓</span> %locale%</div>
 				</div>
 			</div>
-			<div id="omni-overlay"></div>
 		</div>
-		<div id="omni-extension-toast"><img src=''><span>The action has been successful</span></div>
-	</body>
+		<div id="omni-overlay"></div>
+	</div>
+	<div id="omni-extension-toast"><img src=''><span data-locale="val:extension_toast"></span></div>
+</body>
+
 </html>

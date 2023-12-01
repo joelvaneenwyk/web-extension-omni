@@ -4,6 +4,7 @@
 	"offline_enabled": true,
 	"version": "1.4.7",
 	"manifest_version": 3,
+	"default_locale": "ru",
 	"action": {
 		"icons": {
 			"16": "assets/logo-16.png",
@@ -22,7 +23,7 @@
 				"default": "Ctrl+Shift+K",
 				"mac": "Command+Shift+K"
 			},
-			"description": "Open command menu"
+			"description": "__MSG_command_open_description__"
 		}
 	},
 	"background": {
@@ -34,20 +35,51 @@
 				"<all_urls>"
 			],
 			"run_at": "document_end",
-			"js": ["focus.js", "jquery.js", "content.js", "virtualized-list.min.js"],
-			"css": ["content.css"]
+			"js": [
+				"focus.js",
+				"jquery.js",
+				"i18n/scripts/jquery.i18n.min.js",
+				"i18n/scripts/jquery.i18n.messagestore.min.js",
+				"i18n/scripts/jquery.i18n.language.min.js",
+				"i18n/scripts/jquery.i18n.parser.min.js",
+				"i18n/scripts/jquery.i18n.emitter.min.js",
+				"i18n/scripts/CLDRPluralRuleParser.js",
+				"content.js",
+				"virtualized-list.min.js"
+			],
+			"css": [
+				"content.css"
+			]
 		}
 	],
+	"options_page": "options.html",
 	"web_accessible_resources": [
 		{
-			"resources":  ["content.html", "newtab.html", "assets/*", "popup.css", "popup.js"],
-			"matches": ["<all_urls>"]
+			"resources": [
+				"content.html",
+				"newtab.html",
+				"i18n/*.json",
+				"assets/*",
+				"popup.css",
+				"popup.js"
+			],
+			"matches": [
+				"<all_urls>"
+			]
 		}
 	],
 	"permissions": [
-		"tabs", "activeTab", "bookmarks", "browsingData", "history", "scripting", "search"
+		"tabs",
+		"activeTab",
+		"bookmarks",
+		"browsingData",
+		"history",
+		"scripting",
+		"search"
 	],
 	"host_permissions": [
-		"https://www.googleapis.com/*", "https://gstatic.com/*", "*://*/*"
+		"https://www.googleapis.com/*",
+		"https://gstatic.com/*",
+		"*://*/*"
 	]
 }
