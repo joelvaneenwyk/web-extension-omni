@@ -14,6 +14,16 @@ const prepareActions = (actions) => actions.map(action => ({
 	desc: translate(action.desc),
 }));
 
+const initializeTheme = async () => {
+	const options = await chrome.storage.sync.get();
+	const theme = options?.theme ?? 'sys';
+	const isDarkModePreferred = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+	if ((theme === 'sys' && isDarkModePreferred) || theme === 'dark') {
+			document.documentElement.setAttribute("data-theme", "dark");
+	}
+}
+
 $(document).ready(async () => {
 	var actions = [];
 	var isFiltered = false;
@@ -26,6 +36,7 @@ $(document).ready(async () => {
     'en': chrome.runtime.getURL("i18n/en.json"),
     'ru': chrome.runtime.getURL("i18n/ru.json"),
   });
+	initializeTheme();
 
 	// Append the omni into the current page
 	$.get(chrome.runtime.getURL('/content.html'), (data) => {

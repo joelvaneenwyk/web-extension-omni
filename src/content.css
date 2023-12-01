@@ -29,35 +29,32 @@
 	background: none;
 }
 
-@media (prefers-color-scheme: dark) {
-	.omni-extension {
-		--background: #1e2128;
-		--border: #35373e;
-		--text: #f1f1f1;
-		--text-2: #c5c6ca;
-		--text-3: #a5a5ae;
-		--select: #17191e;
-		--accent: #6068d2;
-		--accent-hover: #484fac;
-		--shortcut: #383e4a;
-		--placeholder: #63687b;
-		--background-2: #292d36;
-	}
+html[data-theme="dark"] .omni-extension {
+	--background: #1e2128;
+	--border: #35373e;
+	--text: #f1f1f1;
+	--text-2: #c5c6ca;
+	--text-3: #a5a5ae;
+	--select: #17191e;
+	--accent: #6068d2;
+	--accent-hover: #484fac;
+	--shortcut: #383e4a;
+	--placeholder: #63687b;
+	--background-2: #292d36;
 }
-@media (prefers-color-scheme: light) {
-	.omni-extension {
-		--background: #fafcff;
-		--border: #f2f3fb;
-		--text: #2b2d41;
-		--text-2: #2b2d41;
-		--text-3: #929db2;
-		--select: #eff3f9;
-		--accent: #6068d2;
-		--accent-hover: #484fac;
-		--shortcut: #dadeea;
-		--placeholder: #bac2d1;
-		--background-2: #292d36;
-	}
+
+.omni-extension {
+	--background: #fafcff;
+	--border: #f2f3fb;
+	--text: #2b2d41;
+	--text-2: #2b2d41;
+	--text-3: #929db2;
+	--select: #eff3f9;
+	--accent: #6068d2;
+	--accent-hover: #484fac;
+	--shortcut: #dadeea;
+	--placeholder: #bac2d1;
+	--background-2: #292d36;
 }
 
 @font-face {

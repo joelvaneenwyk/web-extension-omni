@@ -4,7 +4,7 @@ $(document).ready(async () => {
 
 	$("#save-button").on("click", () => {
 		var selectedLanguage = $("#language-select").val();
-		var selectedTheme = $("#theme-mode-select").val();
+		var selectedTheme = $("#theme-select").val();
 
 		chrome.storage.sync.set({ language: selectedLanguage, theme: selectedTheme });
 	});
