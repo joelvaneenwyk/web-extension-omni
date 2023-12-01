@@ -1,5 +1,383 @@
 {
+	"select": {
+		"message": "Выбрать"
+	},
+	"search_placeholder": {
+		"message": "Введите команду или искать"
+	},
+	"footer_results": {
+		"message": "результаты"
+	},
+	"footer_tip_start": {
+		"message": "Используйте стрелки"
+	},
+	"footer_tip_end": {
+		"message": "для навигации"
+	},
+	"extension_toast": {
+		"message": "Действие выполнено успешно"
+	},
 	"command_open_description": {
 		"message": "Открыть меню команд"
+	},
+	"add_a_note_desc": {
+		"message": "Добавить заметку в Google Keep"
+	},
+	"add_a_note_title": {
+		"message": "Добавить заметку"
+	},
+	"add_a_task_to_asana_desc": {
+		"message": "Создать новую задачу в Asana"
+	},
+	"add_a_task_to_asana_title": {
+		"message": "Добавить задачу в Asana"
+	},
+	"add_a_task_to_wip_desc": {
+		"message": "Создать новую задачу в WIP"
+	},
+	"add_a_task_to_wip_title": {
+		"message": "Добавить задачу в WIP"
+	},
+	"add_an_issue_to_linear_desc": {
+		"message": "Создать новый запрос в Linear"
+	},
+	"add_an_issue_to_linear_title": {
+		"message": "Добавить запрос в Linear"
+	},
+	"bookmark_desc": {
+		"message": "Создать закладку"
+	},
+	"bookmark_title": {
+		"message": "Закладка"
+	},
+	"browsing_history_desc": {
+		"message": "Просмотреть историю браузера"
+	},
+	"browsing_history_title": {
+		"message": "История браузера"
+	},
+	"chrome_settings_desc": {
+		"message": "Открыть настройки Chrome"
+	},
+	"chrome_settings_title": {
+		"message": "Настройки Chrome"
+	},
+	"clear_all_browsing_data_desc": {
+		"message": "Очистить все данные браузера"
+	},
+	"clear_all_browsing_data_title": {
+		"message": "Очистить все данные браузера"
+	},
+	"clear_browsing_history_desc": {
+		"message": "Очистить всю историю браузера"
+	},
+	"clear_browsing_history_title": {
+		"message": "Очистить историю браузера"
+	},
+	"clear_cache_desc": {
+		"message": "Очистить кэш"
+	},
+	"clear_cache_title": {
+		"message": "Очистить кэш"
+	},
+	"clear_cookies_desc": {
+		"message": "Очистить все куки"
+	},
+	"clear_cookies_title": {
+		"message": "Очистить куки"
+	},
+	"clear_local_storage_desc": {
+		"message": "Очистить локальное хранилище"
+	},
+	"clear_local_storage_title": {
+		"message": "Очистить локальное хранилище"
+	},
+	"clear_passwords_desc": {
+		"message": "Очистить все сохраненные пароли"
+	},
+	"clear_passwords_title": {
+		"message": "Очистить пароли"
+	},
+	"close_tab_desc": {
+		"message": "Закрыть текущую вкладку"
+	},
+	"close_tab_title": {
+		"message": "Закрыть вкладку"
+	},
+	"close_window_desc": {
+		"message": "Закрыть текущее окно"
+	},
+	"close_window_title": {
+		"message": "Закрыть окно"
+	},
+	"compose_email_desc": {
+		"message": "Написать новое письмо"
+	},
+	"compose_email_title": {
+		"message": "Написать письмо"
+	},
+	"convert_to_pdf_desc": {
+		"message": "Конвертировать файл в PDF"
+	},
+	"convert_to_pdf_title": {
+		"message": "Конвертировать в PDF"
+	},
+	"create_a_canva_design_desc": {
+		"message": "Создать новый дизайн в Canva"
+	},
+	"create_a_canva_design_title": {
+		"message": "Создать дизайн в Canva"
+	},
+	"create_a_figjam_file_desc": {
+		"message": "Создать новый файл FigJam"
+	},
+	"create_a_figjam_file_title": {
+		"message": "Создать файл FigJam"
+	},
+	"create_a_figma_file_desc": {
+		"message": "Создать новый файл Figma"
+	},
+	"create_a_figma_file_title": {
+		"message": "Создать файл Figma"
+	},
+	"create_a_new_podcast_episode_desc": {
+		"message": "Создать новый эпизод подкаста с Anchor"
+	},
+	"create_a_new_podcast_episode_title": {
+		"message": "Создать новый эпизод подкаста"
+	},
+	"create_a_playlist_desc": {
+		"message": "Создать плейлист Spotify"
+	},
+	"create_a_playlist_title": {
+		"message": "Создать плейлист"
+	},
+	"create_a_whiteboard_desc": {
+		"message": "Создать совместную доску"
+	},
+	"create_a_whiteboard_title": {
+		"message": "Создать доску"
+	},
+	"create_an_event_desc": {
+		"message": "Добавить событие в Google Календарь"
+	},
+	"create_an_event_title": {
+		"message": "Создать событие"
+	},
+	"downloads_desc": {
+		"message": "Просмотреть загрузки"
+	},
+	"downloads_title": {
+		"message": "Загрузки"
+	},
+	"duplicate_tab_desc": {
+		"message": "Создать копию текущей вкладки"
+	},
+	"duplicate_tab_title": {
+		"message": "Дублировать вкладку"
+	},
+	"edit_an_image_desc": {
+		"message": "Редактировать изображение в Adobe Photoshop"
+	},
+	"edit_an_image_title": {
+		"message": "Редактировать изображение"
+	},
+	"extensions_desc": {
+		"message": "Управлять расширениями Chrome"
+	},
+	"extensions_title": {
+		"message": "Расширения"
+	},
+	"fullscreen_desc": {
+		"message": "Развернуть страницу на весь экран"
+	},
+	"fullscreen_title": {
+		"message": "На весь экран"
+	},
+	"go_back_desc": {
+		"message": "Вернуться назад в истории текущей вкладки"
+	},
+	"go_back_title": {
+		"message": "Вернуться назад"
+	},
+	"go_forward_desc": {
+		"message": "Перейти вперед в истории текущей вкладки"
+	},
+	"go_forward_title": {
+		"message": "Перейти вперед"
+	},
+	"help_desc": {
+		"message": "Получить помощь с Omni на GitHub"
+	},
+	"help_title": {
+		"message": "Помощь"
+	},
+	"hunt_a_product_desc": {
+		"message": "Подать продукт на Product Hunt"
+	},
+	"hunt_a_product_title": {
+		"message": "Подать продукт"
+	},
+	"incognito_mode_desc": {
+		"message": "Открыть окно инкогнито"
+	},
+	"incognito_mode_title": {
+		"message": "Режим инкогнито"
+	},
+	"make_a_tweet_desc": {
+		"message": "Сделать твит в Twitter"
+	},
+	"make_a_tweet_title": {
+		"message": "Сделать твит"
+	},
+	"manage_browsing_data_desc": {
+		"message": "Управлять данными браузера"
+	},
+	"manage_browsing_data_title": {
+		"message": "Управление данными браузера"
+	},
+	"mute_tab_desc": {
+		"message": "Отключить звук текущей вкладки"
+	},
+	"mute_tab_title": {
+		"message": "Отключить звук вкладки"
+	},
+	"new_codepen_pen_desc": {
+		"message": "Создать новый проект CodePen"
+	},
+	"new_codepen_pen_title": {
+		"message": "Новый проект CodePen"
+	},
+	"new_docs_document_desc": {
+		"message": "Создать новый документ Google Docs"
+	},
+	"new_docs_document_title": {
+		"message": "Новый документ Docs"
+	},
+	"new_excel_spreadsheet_desc": {
+		"message": "Создать новую таблицу Excel"
+	},
+	"new_excel_spreadsheet_title": {
+		"message": "Новая таблица Excel"
+	},
+	"new_form_desc": {
+		"message": "Создать новую форму Google Forms"
+	},
+	"new_form_title": {
+		"message": "Новая форма"
+	},
+	"new_github_gist_desc": {
+		"message": "Создать новый Gist на GitHub"
+	},
+	"new_github_gist_title": {
+		"message": "Новый Gist GitHub"
+	},
+	"new_github_repository_desc": {
+		"message": "Создать новый репозиторий на GitHub"
+	},
+	"new_github_repository_title": {
+		"message": "Новый репозиторий GitHub"
+	},
+	"new_medium_story_desc": {
+		"message": "Создать новую статью на Medium"
+	},
+	"new_medium_story_title": {
+		"message": "Новая статья Medium"
+	},
+	"new_meeting_desc": {
+		"message": "Начать встречу в Google Meet"
+	},
+	"new_meeting_title": {
+		"message": "Новая встреча"
+	},
+	"new_notion_page_desc": {
+		"message": "Создать новую страницу в Notion"
+	},
+	"new_notion_page_title": {
+		"message": "Новая страница Notion"
+	},
+	"new_powerpoint_presentation_desc": {
+		"message": "Создать новую презентацию PowerPoint"
+	},
+	"new_powerpoint_presentation_title": {
+		"message": "Новая презентация PowerPoint"
+	},
+	"new_sheets_spreadsheet_desc": {
+		"message": "Создать новую таблицу Google Sheets"
+	},
+	"new_sheets_spreadsheet_title": {
+		"message": "Новая таблица Sheets"
+	},
+	"new_slides_presentation_desc": {
+		"message": "Создать новую презентацию Google Slides"
+	},
+	"new_slides_presentation_title": {
+		"message": "Новая презентация Slides"
+	},
+	"new_tab_desc": {
+		"message": "Открыть новую вкладку"
+	},
+	"new_tab_title": {
+		"message": "Новая вкладка"
+	},
+	"new_word_document_desc": {
+		"message": "Создать новый документ Word"
+	},
+	"new_word_document_title": {
+		"message": "Новый документ Word"
+	},
+	"pin_tab_desc": {
+		"message": "Закрепить текущую вкладку"
+	},
+	"pin_tab_title": {
+		"message": "Закрепить вкладку"
+	},
+	"print_page_desc": {
+		"message": "Распечатать текущую страницу"
+	},
+	"print_page_title": {
+		"message": "Печать страницы"
+	},
+	"record_a_video_desc": {
+		"message": "Записать и отредактировать видео"
+	},
+	"record_a_video_title": {
+		"message": "Записать видео"
+	},
+	"reload_desc": {
+		"message": "Перезагрузить страницу"
+	},
+	"reload_title": {
+		"message": "Перезагрузка"
+	},
+	"scan_a_qr_code_desc": {
+		"message": "Сканировать QR-код камерой"
+	},
+	"scan_a_qr_code_title": {
+		"message": "Сканирование QR-кода"
+	},
+	"scroll_to_bottom_desc": {
+		"message": "Прокрутить страницу до конца"
+	},
+	"scroll_to_bottom_title": {
+		"message": "Прокрутить вниз"
+	},
+	"scroll_to_top_desc": {
+		"message": "Прокрутить страницу вверх"
+	},
+	"scroll_to_top_title": {
+		"message": "Прокрутить вверх"
+	},
+	"unmute_tab_desc": {
+		"message": "Включить звук текущей вкладки"
+	},
+	"unmute_tab_title": {
+		"message": "Включить звук вкладки"
+	},
+	"unpin_tab_desc": {
+		"message": "Открепить текущую вкладку"
+	},
+	"unpin_tab_title": {
+		"message": "Открепить вкладку"
 	}
 }

@@ -14,13 +14,14 @@ const prepareActions = (actions) => actions.map(action => ({
 	desc: translate(action.desc),
 }));
 
-$(document).ready(() => {
+$(document).ready(async () => {
 	var actions = [];
 	var isFiltered = false;
+	var options = await chrome.storage.sync.get();
 
 	// i18n load
 	$.i18n({
-		locale: 'ru'
+		locale: options?.language ?? 'en',
 	}).load({
     'en': chrome.runtime.getURL("i18n/en.json"),
     'ru': chrome.runtime.getURL("i18n/ru.json"),

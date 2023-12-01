@@ -1,9 +1,18 @@
-$(document).ready(() => {
-	console.log("loaded");
+$(document).ready(async () => {
+	const options = await getOptions();
+	initialize(options);
+
 	$("#save-button").on("click", () => {
 		var selectedLanguage = $("#language-select").val();
-		chrome.storage.sync.set({ language: selectedLanguage }, () => {
-			console.log("Language preference saved.");
-		});
+		var selectedTheme = $("#theme-mode-select").val();
+
+		chrome.storage.sync.set({ language: selectedLanguage, theme: selectedTheme });
 	});
 });
+
+const getOptions = async () => chrome.storage.sync.get();
+
+const initialize = (options) => {
+	$("#language-select").val(options.language ?? "sys");
+	$("#theme-mode-select").val(options.theme ?? "sys")
+}

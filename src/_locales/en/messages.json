@@ -1,5 +1,383 @@
 {
+	"select": {
+		"message": "Select"
+	},
+	"search_placeholder": {
+		"message": "Type a command or search"
+	},
+	"footer_results": {
+		"message": "results"
+	},
+	"footer_tip_start": {
+		"message": "Use arrow keys"
+	},
+	"footer_tip_end": {
+		"message": "to navigate"
+	},
+	"extension_toast": {
+		"message": "The action has been successful"
+	},
 	"command_open_description": {
 		"message": "Open command menu"
+	},
+	"add_a_note_desc": {
+		"message": "Add a note to Google Keep"
+	},
+	"add_a_note_title": {
+		"message": "Add a note"
+	},
+	"add_a_task_to_asana_desc": {
+		"message": "Create a new task in Asana"
+	},
+	"add_a_task_to_asana_title": {
+		"message": "Add a task to Asana"
+	},
+	"add_a_task_to_wip_desc": {
+		"message": "Create a new task in WIP"
+	},
+	"add_a_task_to_wip_title": {
+		"message": "Add a task to WIP"
+	},
+	"add_an_issue_to_linear_desc": {
+		"message": "Create a new issue in Linear"
+	},
+	"add_an_issue_to_linear_title": {
+		"message": "Add an issue to Linear"
+	},
+	"bookmark_desc": {
+		"message": "Create a bookmark"
+	},
+	"bookmark_title": {
+		"message": "Bookmark"
+	},
+	"browsing_history_desc": {
+		"message": "Browse through your browsing history"
+	},
+	"browsing_history_title": {
+		"message": "Browsing history"
+	},
+	"chrome_settings_desc": {
+		"message": "Open the Chrome settings"
+	},
+	"chrome_settings_title": {
+		"message": "Chrome settings"
+	},
+	"clear_all_browsing_data_desc": {
+		"message": "Clear all of your browsing data"
+	},
+	"clear_all_browsing_data_title": {
+		"message": "Clear all browsing data"
+	},
+	"clear_browsing_history_desc": {
+		"message": "Clear all of your browsing history"
+	},
+	"clear_browsing_history_title": {
+		"message": "Clear browsing history"
+	},
+	"clear_cache_desc": {
+		"message": "Clear the cache"
+	},
+	"clear_cache_title": {
+		"message": "Clear cache"
+	},
+	"clear_cookies_desc": {
+		"message": "Clear all cookies"
+	},
+	"clear_cookies_title": {
+		"message": "Clear cookies"
+	},
+	"clear_local_storage_desc": {
+		"message": "Clear the local storage"
+	},
+	"clear_local_storage_title": {
+		"message": "Clear local storage"
+	},
+	"clear_passwords_desc": {
+		"message": "Clear all saved passwords"
+	},
+	"clear_passwords_title": {
+		"message": "Clear passwords"
+	},
+	"close_tab_desc": {
+		"message": "Close the current tab"
+	},
+	"close_tab_title": {
+		"message": "Close tab"
+	},
+	"close_window_desc": {
+		"message": "Close the current window"
+	},
+	"close_window_title": {
+		"message": "Close window"
+	},
+	"compose_email_desc": {
+		"message": "Compose a new email"
+	},
+	"compose_email_title": {
+		"message": "Compose email"
+	},
+	"convert_to_pdf_desc": {
+		"message": "Convert a file to PDF"
+	},
+	"convert_to_pdf_title": {
+		"message": "Convert to PDF"
+	},
+	"create_a_canva_design_desc": {
+		"message": "Create a new design with Canva"
+	},
+	"create_a_canva_design_title": {
+		"message": "Create a Canva design"
+	},
+	"create_a_figjam_file_desc": {
+		"message": "Create a new FigJam file"
+	},
+	"create_a_figjam_file_title": {
+		"message": "Create a FigJam file"
+	},
+	"create_a_figma_file_desc": {
+		"message": "Create a new Figma file"
+	},
+	"create_a_figma_file_title": {
+		"message": "Create a Figma file"
+	},
+	"create_a_new_podcast_episode_desc": {
+		"message": "Create a new podcast episode with Anchor"
+	},
+	"create_a_new_podcast_episode_title": {
+		"message": "Create a new podcast episode"
+	},
+	"create_a_playlist_desc": {
+		"message": "Create a Spotify playlist"
+	},
+	"create_a_playlist_title": {
+		"message": "Create a playlist"
+	},
+	"create_a_whiteboard_desc": {
+		"message": "Create a collaborative whiteboard"
+	},
+	"create_a_whiteboard_title": {
+		"message": "Create a whiteboard"
+	},
+	"create_an_event_desc": {
+		"message": "Add an event to Google Calendar"
+	},
+	"create_an_event_title": {
+		"message": "Create an event"
+	},
+	"downloads_desc": {
+		"message": "Browse through your downloads"
+	},
+	"downloads_title": {
+		"message": "Downloads"
+	},
+	"duplicate_tab_desc": {
+		"message": "Make a copy of the current tab"
+	},
+	"duplicate_tab_title": {
+		"message": "Duplicate tab"
+	},
+	"edit_an_image_desc": {
+		"message": "Edit an image with Adobe Photoshop"
+	},
+	"edit_an_image_title": {
+		"message": "Edit an image"
+	},
+	"extensions_desc": {
+		"message": "Manage your Chrome Extensions"
+	},
+	"extensions_title": {
+		"message": "Extensions"
+	},
+	"fullscreen_desc": {
+		"message": "Make the page fullscreen"
+	},
+	"fullscreen_title": {
+		"message": "Fullscreen"
+	},
+	"go_back_desc": {
+		"message": "Go back in history for the current tab"
+	},
+	"go_back_title": {
+		"message": "Go back"
+	},
+	"go_forward_desc": {
+		"message": "Go forward in history for the current tab"
+	},
+	"go_forward_title": {
+		"message": "Go forward"
+	},
+	"help_desc": {
+		"message": "Get help with Omni on GitHub"
+	},
+	"help_title": {
+		"message": "Help"
+	},
+	"hunt_a_product_desc": {
+		"message": "Submit a product to Product Hunt"
+	},
+	"hunt_a_product_title": {
+		"message": "Hunt a product"
+	},
+	"incognito_mode_desc": {
+		"message": "Open an incognito window"
+	},
+	"incognito_mode_title": {
+		"message": "Incognito mode"
+	},
+	"make_a_tweet_desc": {
+		"message": "Make a tweet on Twitter"
+	},
+	"make_a_tweet_title": {
+		"message": "Make a tweet"
+	},
+	"manage_browsing_data_desc": {
+		"message": "Manage your browsing data"
+	},
+	"manage_browsing_data_title": {
+		"message": "Manage browsing data"
+	},
+	"mute_tab_desc": {
+		"message": "Mute the current tab"
+	},
+	"mute_tab_title": {
+		"message": "Mute tab"
+	},
+	"new_codepen_pen_desc": {
+		"message": "Create a new CodePen pen"
+	},
+	"new_codepen_pen_title": {
+		"message": "New CodePen pen"
+	},
+	"new_docs_document_desc": {
+		"message": "Create a new Google Docs document"
+	},
+	"new_docs_document_title": {
+		"message": "New Docs document"
+	},
+	"new_excel_spreadsheet_desc": {
+		"message": "Create a new Excel spreadsheet"
+	},
+	"new_excel_spreadsheet_title": {
+		"message": "New Excel spreadsheet"
+	},
+	"new_form_desc": {
+		"message": "Create a new Google Forms form"
+	},
+	"new_form_title": {
+		"message": "New form"
+	},
+	"new_github_gist_desc": {
+		"message": "Create a new GitHub gist"
+	},
+	"new_github_gist_title": {
+		"message": "New GitHub gist"
+	},
+	"new_github_repository_desc": {
+		"message": "Create a new GitHub repository"
+	},
+	"new_github_repository_title": {
+		"message": "New GitHub repository"
+	},
+	"new_medium_story_desc": {
+		"message": "Create a new Medium story"
+	},
+	"new_medium_story_title": {
+		"message": "New Medium story"
+	},
+	"new_meeting_desc": {
+		"message": "Start a Google Meet meeting"
+	},
+	"new_meeting_title": {
+		"message": "New meeting"
+	},
+	"new_notion_page_desc": {
+		"message": "Create a new Notion page"
+	},
+	"new_notion_page_title": {
+		"message": "New Notion page"
+	},
+	"new_powerpoint_presentation_desc": {
+		"message": "Create a new PowerPoint presentation"
+	},
+	"new_powerpoint_presentation_title": {
+		"message": "New PowerPoint presentation"
+	},
+	"new_sheets_spreadsheet_desc": {
+		"message": "Create a new Google Sheets spreadsheet"
+	},
+	"new_sheets_spreadsheet_title": {
+		"message": "New Sheets spreadsheet"
+	},
+	"new_slides_presentation_desc": {
+		"message": "Create a new Google Slide presentation"
+	},
+	"new_slides_presentation_title": {
+		"message": "New Slides presentation"
+	},
+	"new_tab_desc": {
+		"message": "Open a new tab"
+	},
+	"new_tab_title": {
+		"message": "New tab"
+	},
+	"new_word_document_desc": {
+		"message": "Create a new Word document"
+	},
+	"new_word_document_title": {
+		"message": "New Word document"
+	},
+	"pin_tab_desc": {
+		"message": "Pin the current tab"
+	},
+	"pin_tab_title": {
+		"message": "Pin tab"
+	},
+	"print_page_desc": {
+		"message": "Print the current page"
+	},
+	"print_page_title": {
+		"message": "Print page"
+	},
+	"record_a_video_desc": {
+		"message": "Record and edit a video"
+	},
+	"record_a_video_title": {
+		"message": "Record a video"
+	},
+	"reload_desc": {
+		"message": "Reload the page"
+	},
+	"reload_title": {
+		"message": "Reload"
+	},
+	"scan_a_qr_code_desc": {
+		"message": "Scan a QR code with your camera"
+	},
+	"scan_a_qr_code_title": {
+		"message": "Scan a QR code"
+	},
+	"scroll_to_bottom_desc": {
+		"message": "Scroll to the bottom of the page"
+	},
+	"scroll_to_bottom_title": {
+		"message": "Scroll to bottom"
+	},
+	"scroll_to_top_desc": {
+		"message": "Scroll to the top of the page"
+	},
+	"scroll_to_top_title": {
+		"message": "Scroll to top"
+	},
+	"unmute_tab_desc": {
+		"message": "Unmute the current tab"
+	},
+	"unmute_tab_title": {
+		"message": "Unmute tab"
+	},
+	"unpin_tab_desc": {
+		"message": "Unpin the current tab"
+	},
+	"unpin_tab_title": {
+		"message": "Unpin tab"
 	}
 }

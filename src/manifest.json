@@ -75,7 +75,8 @@
 		"browsingData",
 		"history",
 		"scripting",
-		"search"
+		"search",
+		"storage"
 	],
 	"host_permissions": [
 		"https://www.googleapis.com/*",
