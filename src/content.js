@@ -1,5 +1,12 @@
 // Workaround to capture Esc key on certain sites
+const SYSTEM = 'sys';
+const ENGLISH = 'en';
+const RUSSIAN = 'ru';
+
 var isOpen = false;
+let options = null;
+let availableLanguages = [ENGLISH, RUSSIAN];
+
 document.onkeyup = (e) => {
 	if (e.key == "Escape" && isOpen) {
 		chrome.runtime.sendMessage({request:"close-omni"})
@@ -15,28 +22,32 @@ const prepareActions = (actions) => actions.map(action => ({
 }));
 
 const initializeTheme = async () => {
-	const options = await chrome.storage.sync.get();
-	const theme = options?.theme ?? 'sys';
+	const theme = options?.theme ?? SYSTEM;
 	const isDarkModePreferred = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-	if ((theme === 'sys' && isDarkModePreferred) || theme === 'dark') {
+	if ((theme === SYSTEM && isDarkModePreferred) || theme === 'dark') {
 			document.documentElement.setAttribute("data-theme", "dark");
 	}
+}
+
+const getSysLanguage = () => {
+	const language = chrome.i18n.getUILanguage();
+	return availableLanguages.includes(language) ? language : ENGLISH; 
 }
 
 $(document).ready(async () => {
 	var actions = [];
 	var isFiltered = false;
-	var options = await chrome.storage.sync.get();
+	options = await chrome.storage.sync.get();
 
 	// i18n load
 	$.i18n({
-		locale: options?.language ?? 'en',
+		locale: options.language === SYSTEM ? getSysLanguage() : options.language,
 	}).load({
-    'en': chrome.runtime.getURL("i18n/en.json"),
-    'ru': chrome.runtime.getURL("i18n/ru.json"),
-  });
-	initializeTheme();
+		'en': chrome.runtime.getURL("i18n/en.json"),
+		'ru': chrome.runtime.getURL("i18n/ru.json"),
+	});
+	await initializeTheme();
 
 	// Append the omni into the current page
 	$.get(chrome.runtime.getURL('/content.html'), (data) => {
