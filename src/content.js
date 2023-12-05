@@ -39,11 +39,10 @@ $(document).ready(async () => {
 	var actions = [];
 	var isFiltered = false;
 	options = await chrome.storage.sync.get();
+	var locale = options.language === SYSTEM ? getSysLanguage() : options.language ?? getSysLanguage();
 
 	// i18n load
-	$.i18n({
-		locale: options.language === SYSTEM ? getSysLanguage() : options.language,
-	}).load({
+	$.i18n({ locale }).load({
 		'en': chrome.runtime.getURL("i18n/en.json"),
 		'ru': chrome.runtime.getURL("i18n/ru.json"),
 	});
