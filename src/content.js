@@ -26,7 +26,7 @@ const initializeTheme = async () => {
 	const isDarkModePreferred = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
 	if ((theme === SYSTEM && isDarkModePreferred) || theme === 'dark') {
-			document.documentElement.setAttribute("data-theme", "dark");
+			document.documentElement.setAttribute("data-omni-theme", "dark");
 	}
 }
 
