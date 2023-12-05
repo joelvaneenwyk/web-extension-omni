@@ -1,6 +1,6 @@
 {
 	"select": "Выбрать",
-	"search_placeholder": "Введите команду или искать",
+	"search_placeholder": "Поиск в браузере",
 	"result_count": "$1 {{PLURAL:$1|результат|результата|результатов}}",
 	"footer_tip_start": "Используйте стрелки",
 	"footer_tip_end": "для навигации",
