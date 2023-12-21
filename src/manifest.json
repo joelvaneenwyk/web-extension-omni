@@ -10,7 +10,8 @@
 			"16": "assets/logo-16.png",
 			"48": "assets/logo-48.png",
 			"128": "assets/logo-128.png"
-		}
+		},
+		"default_popup": "popup.html"
 	},
 	"icons": {
 		"16": "assets/logo-16.png",
@@ -52,7 +53,6 @@
 			]
 		}
 	],
-	"options_page": "options.html",
 	"web_accessible_resources": [
 		{
 			"resources": [

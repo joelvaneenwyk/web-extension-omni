@@ -379,5 +379,23 @@
 	},
 	"unpin_tab_title": {
 		"message": "Открепить вкладку"
+	},
+	"query_search_desc": {
+		"message": "Поиск запроса"
+	},
+	"query_search_title": {
+		"message": "Поиск"
+	},
+	"goto_search_desc": {
+		"message": "Перейти на веб-сайт"
+	},
+	"goto_search_title": {
+		"message": "Поиск"
+	},
+	"specific_bookmark_desc": {
+		"message": "Закладка"
+	},
+	"chrome_tab_desc": {
+		"message": "Вкладка Chrome"
 	}
 }

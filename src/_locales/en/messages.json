@@ -379,5 +379,23 @@
 	},
 	"unpin_tab_title": {
 		"message": "Unpin tab"
+	},
+	"query_search_desc": {
+		"message": "Search for a query"
+	},
+	"query_search_title": {
+		"message": "Search"
+	},
+	"goto_search_desc": {
+		"message": "Go to website"
+	},
+	"goto_search_title": {
+		"message": "Search"
+	},
+	"specific_bookmark_desc": {
+		"message": "Bookmark"
+	},
+	"chrome_tab_desc": {
+		"message": "Chrome tab"
 	}
 }

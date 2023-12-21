@@ -14,5 +14,5 @@ const getOptions = async () => chrome.storage.sync.get();
 
 const initialize = (options) => {
 	$("#language-select").val(options.language ?? "sys");
-	$("#theme-mode-select").val(options.theme ?? "sys")
+	$("#theme-select").val(options.theme ?? "sys")
 }
