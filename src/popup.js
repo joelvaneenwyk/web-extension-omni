@@ -1,18 +1,35 @@
-$(document).ready(async () => {
+document.addEventListener('DOMContentLoaded',async () => {
 	const options = await getOptions();
 	initialize(options);
 
-	$("#save-button").on("click", () => {
-		var selectedLanguage = $("#language-select").val();
-		var selectedTheme = $("#theme-select").val();
+	document
+		.getElementById("language-select")
+		.addEventListener("change", async (event) => {
+			const selectedOption = event.target.value;
+			const updatedOptions = {
+				...(await getOptions()),
+				language: selectedOption,
+			};
+			setOptions(updatedOptions);
+		});
 
-		chrome.storage.sync.set({ language: selectedLanguage, theme: selectedTheme });
-	});
+	document
+		.getElementById("theme-select")
+		.addEventListener("change", async (event) => {
+			const selectedOption = event.target.value;
+			const updatedOptions = { ...(await getOptions()), theme: selectedOption };
+			setOptions(updatedOptions);
+		});
 });
 
-const getOptions = async () => chrome.storage.sync.get();
+const getOptions = async () => await chrome.storage.sync.get();
+
+const setOptions = (options) => chrome.storage.sync.set(options);
 
 const initialize = (options) => {
-	$("#language-select").val(options.language ?? "sys");
-	$("#theme-select").val(options.theme ?? "sys")
-}
+	const languageSelect = document.getElementById("language-select");
+	const themeSelect = document.getElementById("theme-select");
+
+	languageSelect.value = options.language ?? "sys";
+	themeSelect.value = options.theme ?? "sys";
+};

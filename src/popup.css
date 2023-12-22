@@ -39,7 +39,7 @@
 	display: flex;
 	flex-direction: column;
 	width: 250px;
-	gap: .1rem;
+	gap: .3rem;
 	font-size: 16px;
 }
 
@@ -85,31 +85,6 @@
 	line-height: 1.5rem; /* 150% */
 }
 
-.button {
-	/* Reset */
-  border: 0;
-  outline: 0;
-  font: inherit;
-
-	display: inline-flex;
-	padding: 0.625rem 1.25rem;
-	flex-direction: column;
-	align-items: center;
-
-	border-radius: 0.25rem;
-	background: var(--colors-primary, #6E41E2);
-	color: var(--colors-white, #fff);
-	cursor: pointer;
-
-	transition: ease-in-out 150ms;
-}
-
-.button:hover {
-	border-radius: 0.25rem;
-	background: var(--colors-primary-hover, #5835B0);
-}
-
-.button:active {
-	border-radius: 0.25rem;
-	background: var(--Colors-Primary-Active, #472C8A);
+.selector:hover {
+	box-shadow: 0px 4px 24px 0px rgba(51, 51, 51, 0.24), 0px 4px 4px 0px rgba(51, 51, 51, 0.04);
 }
