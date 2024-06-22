@@ -23,7 +23,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/compat@npm:^1.1.0":
+"@eslint/compat@npm:^1.x":
   version: 1.1.0
   resolution: "@eslint/compat@npm:1.1.0"
   checksum: 10c0/0aca1990c9303c35f9f0a5d9a9942fb5821b4ebbc4e663336dec7223ae73d22a24960cabf8ecac99176297d4ce766316bff24186bd4bbedd444b6658b8ec7a55
@@ -58,7 +58,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:9.5.0, @eslint/js@npm:^9.5.0":
+"@eslint/js@npm:9.5.0, @eslint/js@npm:^9.x":
   version: 9.5.0
   resolution: "@eslint/js@npm:9.5.0"
   checksum: 10c0/dacf51ec2d5b4c8d1315d21a0ff761235d9e39b2391cb945138c58dc512a6c18949c40b644235f5c4fdf5b637ef8f881214acc496dddf46b718529bf22af42ac
@@ -733,7 +733,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react@npm:^7.34.3":
+"eslint-plugin-react@npm:^7.x":
   version: 7.34.3
   resolution: "eslint-plugin-react@npm:7.34.3"
   dependencies:
@@ -1044,7 +1044,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globals@npm:^15.6.0":
+"globals@npm:^15.x":
   version: 15.6.0
   resolution: "globals@npm:15.6.0"
   checksum: 10c0/ba488ec5bd770336a3e1ffec3f718077768aec99e16f30c33c0eeaed09e0b93fa06a24fc0d3844d1d81a678c86d22f04547703e87e2e4353601eddcb800479ec
@@ -1654,6 +1654,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"omni-core@workspace:*, omni-core@workspace:src/omni-core":
+  version: 0.0.0-use.local
+  resolution: "omni-core@workspace:src/omni-core"
+  languageName: unknown
+  linkType: soft
+
+"omni-firefox@workspace:*, omni-firefox@workspace:src/omni-firefox":
+  version: 0.0.0-use.local
+  resolution: "omni-firefox@workspace:src/omni-firefox"
+  dependencies:
+    typescript: "npm:^5.5.2"
+  languageName: unknown
+  linkType: soft
+
 "optionator@npm:^0.9.3":
   version: 0.9.4
   resolution: "optionator@npm:0.9.4"
@@ -2126,7 +2140,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript-eslint@npm:^7.13.1":
+"typescript-eslint@npm:^7.x":
   version: 7.13.1
   resolution: "typescript-eslint@npm:7.13.1"
   dependencies:
@@ -2139,6 +2153,26 @@ __metadata:
     typescript:
       optional: true
   checksum: 10c0/b929e865cdbf2b8b5dd417d40a6af2d76bb87a8ad3879dcde9a0f66b478906247ec3378aa7ab4c0659ddae73ba4bb15167053ff20a552e192f352797e94bee46
+  languageName: node
+  linkType: hard
+
+"typescript@npm:^5.5.2":
+  version: 5.5.2
+  resolution: "typescript@npm:5.5.2"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 10c0/8ca39b27b5f9bd7f32db795045933ab5247897660627251e8254180b792a395bf061ea7231947d5d7ffa5cb4cc771970fd4ef543275f9b559f08c9325cccfce3
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@npm%3A^5.5.2#optional!builtin<compat/typescript>":
+  version: 5.5.2
+  resolution: "typescript@patch:typescript@npm%3A5.5.2#optional!builtin<compat/typescript>::version=5.5.2&hash=379a07"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 10c0/a7b7ede75dc7fc32a76d0d0af6b91f5fbd8620890d84c906f663d8783bf3de6d7bd50f0430b8bb55eac88a38934af847ff709e7156e5138b95ae94cbd5f73e5b
   languageName: node
   linkType: hard
 
@@ -2167,12 +2201,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "web-extension-omni@workspace:."
   dependencies:
-    "@eslint/compat": "npm:^1.1.0"
-    "@eslint/js": "npm:^9.5.0"
+    "@eslint/compat": "npm:^1.x"
+    "@eslint/js": "npm:^9.x"
     eslint: "npm:9.x"
-    eslint-plugin-react: "npm:^7.34.3"
-    globals: "npm:^15.6.0"
-    typescript-eslint: "npm:^7.13.1"
+    eslint-plugin-react: "npm:^7.x"
+    globals: "npm:^15.x"
+    omni-core: "workspace:*"
+    omni-firefox: "workspace:*"
+    typescript: "npm:^5.5.2"
+    typescript-eslint: "npm:^7.x"
   languageName: unknown
   linkType: soft
 
