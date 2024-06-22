@@ -1,0 +1,8 @@
+{
+  "[typescript][javascript][typescriptreact][javascriptreact]": {
+    "editor.maxTokenizationLineLength": 2500,
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "modificationsIfAvailable",
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  }
+}

@@ -372,7 +372,6 @@
 
     if (focusable) {
       if (guardCount > 2) {
-        // eslint-disable-next-line no-console
         console.error('FocusLock: focus-fighting detected. Only one focus management system could be active. ' + 'See https://github.com/theKashey/focus-lock/#focus-fighting');
         lockDisabled = true;
         setTimeout(function () {

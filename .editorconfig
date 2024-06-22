@@ -1,10 +1,18 @@
 root = true
 
 [*]
-indent_style = tab
+indent_style = space
 charset = utf-8
 trim_trailing_whitespace = false
 indent_size = 2
 
-[*.md]
+print_width = 120
+
+[*.{md,markdown,txt}]
 trim_trailing_whitespace = false
+
+[*.{json,jsonc}]
+indent_size = 2
+
+[*.{yml,yaml}]
+indent_size = 2
